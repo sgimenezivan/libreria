@@ -10,7 +10,7 @@ class LibrosApi {
       const nuevoLibro = await this.factory.LibrosDao.createDao(libro);
       return nuevoLibro;
     } catch (error) {
-      return error;
+      throw error;
     }
   };
 

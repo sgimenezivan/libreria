@@ -12,7 +12,7 @@ app.use("/api", router)
 
 
 if (MODE === "sql") {
-  await connection.sync({ force: true });
+  await connection.sync({ force: false });
 }
 
 
